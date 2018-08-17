@@ -2,20 +2,24 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-# タイトル
-１ページ目
+# Node.js入門
+
+---
+
+layout:true
+## Node.jsとは
+
+---
+
+![node_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png)
+
+---
+
+### サーバーサイドJavaScriptの実行環境
+通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用することができる
+
 ---
 layout:false
-## スライド１
-### スライド１
-２ページ目
-
-* コードを書く
-```
-// コードを書く
-abc
-```
----
 ## スライド２
 ### スライド２
 ３ページ目
