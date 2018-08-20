@@ -27,10 +27,53 @@ layout:true
 * 軽量で効率よくリクエストを処理
 
 ---
-layout:false
-## Hello World(サーバーサイド)
+##インストール
 
-```Javascript:sample.js
+公式サイト
+[http://nodejs.org/](http://nodejs.org/)
+
+バージョンの確認
+```
+$ node -v
+```
+
+---
+layout:false
+## サンプル "Hello World"
+### 通常のJavaScript(クライアントサイド)
+
+```javascript:hello.js
+document.writeln('Hello World!');
+```
+
+```html:index.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <pre>
+            <script src="hello.js"></script>
+        </pre>
+    </body>
+</html>
+
+```
+
+---
+layout:false
+## サンプル "Hello World"
+### Node.js
+
+Console
+```javascript
+console.log("Hello world!");
+```
+
+サーバーサイド
+```javascript:sample.js
 var http = require('http');
 var server = http.createServer(function(req, res) {
   res.write("Hello World!\n");
