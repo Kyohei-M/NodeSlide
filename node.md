@@ -11,6 +11,12 @@ class: center, middle
 ![node_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png)
 
 ---
+## 対象者
+
+* Node.js未経験者
+* サーバーサイド未経験者
+
+---
 
 class: center, middle, inverse
 # Node.jsとは
@@ -125,6 +131,11 @@ $ node sample2.js
 ![sample2](sample2.png)
 
 ---
+
+---
+
+---
+
 layout: true
 ## npm
 
