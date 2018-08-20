@@ -132,11 +132,8 @@ $ node sample2.js
 ![sample2](sample2.png)
 
 ---
-
-layout: true
+layout: false
 ## npm
-
----
 
 ### Node.jsのパッケージ管理ツール
 
@@ -144,22 +141,6 @@ layout: true
     * ``Nuget``や``gem``のようなもの
 * Node.jsをインストールすると標準でついてくる
 * 最近では``yarn``の方が主流？
-
----
-
-バージョンの確認
-
-```console
-$ npm -v
-```
-
-パッケージのインストール
-
-```console
-$ node install -g パッケージ名
-```
-
-``-g``はグローバルインストールのオプション。付けない場合はカレントディレクトリにインストールされる
 
 ---
 layout: false
