@@ -5,30 +5,38 @@ class: center, middle, inverse
 # Node.js入門
 
 ---
+layout: false
+class: center, middle
+
+![node_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png)
+
+---
+
+class: center, middle, inverse
+# Node.jsとは
+
+---
 
 layout:true
 ## Node.jsとは
 
 ---
 
-![node_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png)
-
----
-
-### サーバーサイドJavaScriptの実行環境
-通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用することができる
+### サーバーサイドのJavaScript実行環境
+* 通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用したもの
+* 軽量で効率よくリクエストを処理
 
 ---
 layout:false
-## スライド２
-### スライド２
-３ページ目
-.left-column[
-* 左に書く
-]
-.right-column[
-* 右に書く
-]
+## Hello World(サーバーサイド)
+
+```Javascript:sample.js
+var http = require('http');
+var server = http.createServer(function(req, res) {
+  res.write("Hello World!\n");
+  res.end();
+}).listen(8080);
+```
 
 ---
 ## スライド３
