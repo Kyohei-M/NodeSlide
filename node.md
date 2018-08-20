@@ -22,11 +22,13 @@ layout:true
 
 ---
 
-### サーバーサイドのJavaScript実行環境  
+### サーバーサイドのJavaScript実行環境
+
 * 通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用したもの
 * 軽量で効率よくリクエストを処理
 
-### 特徴  
+### 特徴
+
 * ノンブロッキングI/O
 * イベントループ
 
@@ -47,15 +49,18 @@ $ node -v
 ---
 layout:true
 ## サンプル "Hello World"
+
 ---
 ### 通常のJavaScript(クライアントサイド)
 
 hello.js
+
 ```javascript
 document.writeln('Hello World!');
 ```
 
 index.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -98,6 +103,7 @@ Hello world!
 ### Node.js(サーバーサイド)
 
 sample2.js
+
 ```javascript
 var http = require('http');
 var server = http.createServer(function(req, res) {
@@ -110,29 +116,57 @@ var server = http.createServer(function(req, res) {
 ### Node.js(サーバーサイド)
 
 実行
+
 ```console
 $ node sample2.js
 ```
+
 ``localhost:8080``にアクセス  
 ![sample2](sample2.png)
 
 ---
-layout:true
+layout:false
+## npm
+
+### Node.jsのパッケージ管理ツール
+
+* Github等で公開されているライブラリパッケージを導入するためのツール
+* Nodeをインストールすると標準でついてくる
+
+---
+## npm
+
+バージョンの確認
+
+```console
+$ npm -v
+```
+
+パッケージのインストール
+
+```console
+$ node install -g パッケージ名
+```
+
+``-g``はグローバルインストールのオプション。付けない場合はカレントディレクトリにインストールされる
+
+---
 class: center, middle, inverse
 # デモ
 
 ---
 layout:false
-## おわりに  
+## おわりに
+
 
 
 ---
 ## 参考  
-Node.js入門
+Node.js入門  
 [http://www.tohoho-web.com/ex/nodejs.html](http://www.tohoho-web.com/ex/nodejs.html)
 
-基礎から学ぶNode.js
+基礎から学ぶNode.js  
 [http://gihyo.jp/dev/serial/01/nodejs](http://gihyo.jp/dev/serial/01/nodejs)
 
-Wikipedia
+Wikipedia  
 [https://ja.wikipedia.org/wiki/Node.js](https://ja.wikipedia.org/wiki/Node.js)
