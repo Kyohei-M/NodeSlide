@@ -124,10 +124,11 @@ $ node sample2.js
 ``localhost:8080``にアクセス  
 ![sample2](sample2.png)
 
+---
+layout: true
+## npm
 
 ---
-layout: false
-## npm
 
 ### Node.jsのパッケージ管理ツール
 
@@ -137,8 +138,6 @@ layout: false
 * 最近では``yarn``の方が主流？
 
 ---
-## npm
-
 バージョンの確認
 
 ```console
@@ -154,6 +153,7 @@ $ node install -g パッケージ名
 ``-g``はグローバルインストールのオプション。付けない場合はカレントディレクトリにインストールされる
 
 ---
+
 class: center, middle, inverse
 # デモ
 
