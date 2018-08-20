@@ -132,6 +132,10 @@ $ node sample2.js
 
 ---
 
+layout: false
+class: center, middle, inverse
+# デモ
+
 ---
 
 ---
