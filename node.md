@@ -127,7 +127,8 @@ var server = http.createServer(function(req, res) {
 $ node sample2.js
 ```
 
-``localhost:8080``にアクセス  
+``localhost:8080``にアクセス
+
 ![sample2](sample2.png)
 
 ---
@@ -135,8 +136,6 @@ $ node sample2.js
 layout: false
 class: center, middle, inverse
 # デモ
-
----
 
 ---
 
@@ -148,11 +147,12 @@ layout: true
 ### Node.jsのパッケージ管理ツール
 
 * Github等で公開されているライブラリパッケージを導入するためのツール
-    ``Nuget``や``gem``のようなもの
+    * ``Nuget``や``gem``のようなもの
 * Node.jsをインストールすると標準でついてくる
 * 最近では``yarn``の方が主流？
 
 ---
+
 バージョンの確認
 
 ```console
