@@ -133,17 +133,6 @@ $ node sample2.js
 
 ---
 layout: false
-## npm
-
-### Node.jsのパッケージ管理ツール
-
-* Github等で公開されているライブラリパッケージを導入するためのツール
-    * ``Nuget``や``gem``のようなもの
-* Node.jsをインストールすると標準でついてくる
-* 最近では``yarn``の方が主流？
-
----
-layout: false
 class: center, middle, inverse
 # デモ
 
