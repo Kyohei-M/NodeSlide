@@ -88,7 +88,7 @@ index.html
 
 実行(ダブルクリック)
 
-![js1](js1.png)
+![jssample1](js1.png)
 
 ---
 ### Node.js(コンソール)
@@ -131,11 +131,7 @@ $ node sample2.js
 
 ![sample2](sample2.png)
 
----
-
-layout: false
-class: center, middle, inverse
-# デモ
+あああ
 
 ---
 
@@ -168,9 +164,17 @@ $ node install -g パッケージ名
 ``-g``はグローバルインストールのオプション。付けない場合はカレントディレクトリにインストールされる
 
 ---
-
+layout: false
 class: center, middle, inverse
 # デモ
+
+---
+layout: false
+## Express
+
+### Webアプリケーションフレームワーク
+
+* URI解析など、ローレベルな部分を実装しなくて済む
 
 ---
 layout: false
