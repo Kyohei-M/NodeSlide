@@ -131,8 +131,6 @@ $ node sample2.js
 
 ![sample2](sample2.png)
 
-あああ
-
 ---
 
 layout: true
@@ -167,6 +165,36 @@ $ node install -g パッケージ名
 layout: false
 class: center, middle, inverse
 # デモ
+
+---
+
+layout: true
+## npm
+
+---
+
+### Node.jsのパッケージ管理ツール
+
+* Github等で公開されているライブラリパッケージを導入するためのツール
+    * ``Nuget``や``gem``のようなもの
+* Node.jsをインストールすると標準でついてくる
+* 最近では``yarn``の方が主流？
+
+---
+
+バージョンの確認
+
+```console
+$ npm -v
+```
+
+パッケージのインストール
+
+```console
+$ node install -g パッケージ名
+```
+
+``-g``はグローバルインストールのオプション。付けない場合はカレントディレクトリにインストールされる
 
 ---
 layout: false
