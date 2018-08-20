@@ -17,7 +17,7 @@ class: center, middle, inverse
 
 ---
 
-layout:true
+layout: true
 ## Node.jsとは
 
 ---
@@ -34,8 +34,8 @@ layout:true
 
 
 ---
-layout:false
-##インストール  
+layout: false
+## インストール  
 
 公式サイト  
 [http://nodejs.org/](http://nodejs.org/)
@@ -47,7 +47,7 @@ $ node -v
 ```
 
 ---
-layout:true
+layout: true
 ## サンプル "Hello World"
 
 ---
@@ -126,8 +126,7 @@ $ node sample2.js
 
 
 ---
-layout:false
-
+layout: false
 ## npm
 
 ### Node.jsのパッケージ管理ツール
@@ -159,7 +158,7 @@ class: center, middle, inverse
 # デモ
 
 ---
-layout:false
+layout: false
 ## おわりに
 
 Webに関する理解を深めるためには、サーバーの応答の仕組みを知ることも大事だと思います。  
