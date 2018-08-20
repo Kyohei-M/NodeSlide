@@ -22,12 +22,18 @@ layout:true
 
 ---
 
-### サーバーサイドのJavaScript実行環境
+### サーバーサイドのJavaScript実行環境  
 * 通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用したもの
 * 軽量で効率よくリクエストを処理
 
+### 特徴  
+* ノンブロッキングI/O
+* イベントループ
+
+
 ---
-##インストール
+layout:false
+##インストール  
 
 公式サイト  
 [http://nodejs.org/](http://nodejs.org/)
@@ -65,12 +71,17 @@ index.html
 </html>
 
 ```
-実行  
+
+---
+### 通常のJavaScript(クライアントサイド)
+
+実行(ダブルクリック)
+
 ![js1](js1.png)
 
 ---
-### Node.js
-#### コンソール
+### Node.js(コンソール)
+
 sample1.js
 ```javascript
 console.log("Hello world!");
@@ -84,8 +95,8 @@ Hello world!
 ```
 
 ---
-### Node.js
-#### サーバーサイド
+### Node.js(サーバーサイド)
+
 sample2.js
 ```javascript
 var http = require('http');
@@ -95,17 +106,33 @@ var server = http.createServer(function(req, res) {
 }).listen(8080);
 ```
 
+---
+### Node.js(サーバーサイド)
+
 実行
 ```console
 $ node sample2.js
 ```
+``localhost:8080``にアクセス  
 ![sample2](sample2.png)
 
 ---
-## スライド３
-### スライド３
-４ページ目
+layout:true
+class: center, middle, inverse
+# デモ
 
-* リンクを貼る
+---
+layout:false
+## おわりに  
 
-__[Google](https://www.google.co.jp/)__
+
+---
+## 参考  
+Node.js入門
+[http://www.tohoho-web.com/ex/nodejs.html](http://www.tohoho-web.com/ex/nodejs.html)
+
+基礎から学ぶNode.js
+[http://gihyo.jp/dev/serial/01/nodejs](http://gihyo.jp/dev/serial/01/nodejs)
+
+Wikipedia
+[https://ja.wikipedia.org/wiki/Node.js](https://ja.wikipedia.org/wiki/Node.js)
