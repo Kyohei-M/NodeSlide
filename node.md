@@ -29,24 +29,28 @@ layout:true
 ---
 ##インストール
 
-公式サイト
+公式サイト  
 [http://nodejs.org/](http://nodejs.org/)
 
 バージョンの確認
-```
+
+```console
 $ node -v
 ```
 
 ---
-layout:false
+layout:true
 ## サンプル "Hello World"
+---
 ### 通常のJavaScript(クライアントサイド)
 
-```javascript:hello.js
+hello.js
+```javascript
 document.writeln('Hello World!');
 ```
 
-```html:index.html
+index.html
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -61,25 +65,41 @@ document.writeln('Hello World!');
 </html>
 
 ```
+実行  
+![js1](js1.png)
 
 ---
-layout:false
-## サンプル "Hello World"
 ### Node.js
-
-Console
+#### コンソール
+sample1.js
 ```javascript
 console.log("Hello world!");
 ```
 
-サーバーサイド
-```javascript:sample.js
+実行
+
+```console
+$ node sample1.js
+Hello world!
+```
+
+---
+### Node.js
+#### サーバーサイド
+sample2.js
+```javascript
 var http = require('http');
 var server = http.createServer(function(req, res) {
   res.write("Hello World!\n");
   res.end();
 }).listen(8080);
 ```
+
+実行
+```console
+$ node sample2.js
+```
+![sample2](sample2.png)
 
 ---
 ## スライド３
