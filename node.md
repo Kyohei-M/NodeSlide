@@ -124,14 +124,18 @@ $ node sample2.js
 ``localhost:8080``にアクセス  
 ![sample2](sample2.png)
 
+
 ---
 layout:false
+
 ## npm
 
 ### Node.jsのパッケージ管理ツール
 
 * Github等で公開されているライブラリパッケージを導入するためのツール
-* Nodeをインストールすると標準でついてくる
+    ``Nuget``や``gem``のようなもの
+* Node.jsをインストールすると標準でついてくる
+* 最近では``yarn``の方が主流？
 
 ---
 ## npm
@@ -158,7 +162,8 @@ class: center, middle, inverse
 layout:false
 ## おわりに
 
-
+Webに関する理解を深めるためには、サーバーの応答の仕組みを知ることも大事だと思います。  
+Node.jsはライブラリが豊富で簡単に始められるので、まだサーバーサイド開発に触れたことがない方はNode.jsを使ってみてはどうでしょうか。
 
 ---
 ## 参考  
