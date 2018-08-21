@@ -231,8 +231,7 @@ $ npm install express
 ---
 layout: false
 class: center, middle, inverse
-# デモ
-## 新規作成からデプロイまで
+# 新規作成からデプロイまで
 
 ---
 ## 新規作成
@@ -280,7 +279,7 @@ Webサーバーを起動
 $ node sample.js
 ```
 
- localhost:8081 にアクセス
+ localhost:8080 にアクセス
 
 ![demo.png](demo.png)
 

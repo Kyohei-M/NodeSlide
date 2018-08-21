@@ -2,7 +2,7 @@ const bodyParser = require('body-parser')
 var express = require('express')
 var app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
-app.listen(8081, () => { console.log('Example app listening on port 8081!') })
+app.listen(process.env.PORT || 8080, () => { console.log('Example app listening!') })
 
 app.get('/', function(req, res) {
   const body = `
