@@ -33,11 +33,16 @@ layout: true
 * 通常クライアントサイドで実行されるJavaScriptを、サーバーサイド開発に使用したもの
 * 軽量で効率よくリクエストを処理
 
-### 特徴
+### アーキテクチャ
 
 * ノンブロッキングI/O
+    * 複数のプロセスを同時実行
+    * ステータスを定期的に確認している(非同期とは異なる)
+　　
 * イベントループ
-
+    * イベントを待機するループ機能を持つ
+    * 発生したイベントはイベントキューに入れられ、順次取り出される
+    * イベントに対する処理はコールバック関数を使用
 
 ---
 layout: false
@@ -53,8 +58,12 @@ $ node -v
 ```
 
 ---
+class: center, middle, inverse
+# サンプル
+
+---
 layout: true
-## サンプル "Hello World"
+## "Hello World"
 
 ---
 ### 通常のJavaScript(クライアントサイド)
@@ -118,14 +127,14 @@ var server = http.createServer(function(req, res) {
 }).listen(8080);
 ```
 
----
-### Node.js(サーバーサイド)
-
 実行
 
 ```console
 $ node sample2.js
 ```
+
+---
+### Node.js(サーバーサイド)
 
 localhost:8080 にアクセス
 
@@ -134,14 +143,23 @@ localhost:8080 にアクセス
 
 ---
 layout: false
+class: center, middle, inverse
+# パッケージ管理
+
+---
+layout: true
 ## npm
 
+---
 ### Node.jsのパッケージ管理ツール
 
 * Github等で公開されているライブラリパッケージを導入するためのツール
-    * ``Nuget``や``gem``のようなもの
-* Node.jsをインストールすると標準でついてくる
-* 最近では``yarn``の方が主流？
+    Nuget や gem のようなもの
+  
+* Node.jsをインストールすると標準でついてくる  
+    (アンインストールすると消えるので注意)  
+* 最近では yarn の方が主流？  
+    [https://yarnpkg.com/ ](https://yarnpkg.com/ )
 
 ---
 
@@ -162,15 +180,72 @@ $ node install -g パッケージ名
 ---
 layout: false
 class: center, middle, inverse
-# デモ
+# フレームワーク
+
+---
+layout: true
+## Express.js
 
 ---
 layout: false
-## Express
-
-### Webアプリケーションフレームワーク
+### Node.jsのWebアプリケーションフレームワーク
 
 * URI解析など、ローレベルな部分を実装しなくて済む
+
+インストール
+
+```console
+$ npm install express
+```
+
+---
+class: center, middle, inverse
+# デモ
+
+---
+layout: true
+## デモ
+
+---
+フォルダを作成
+
+```console
+$ mkdir ~/myapp
+$ cd ~/myapp
+```
+
+package.json を作成
+
+```console
+$ npm init
+```
+
+Express パッケージをインストール
+
+```console
+$ npm install express
+```
+
+---
+リクエストのbodyパーサーをインストール
+
+```console
+$ npm install body-parser
+```
+
+ファイルを作成(sample.js)  
+[sample.js](sample.js)
+
+Webサーバーを起動
+
+```console
+$ node sample.js
+```
+
+---
+ localhost:8081 にアクセス
+
+![demo.png](demo.png)
 
 ---
 layout: false
@@ -189,3 +264,6 @@ Node.js入門
 
 Wikipedia  
 [https://ja.wikipedia.org/wiki/Node.js](https://ja.wikipedia.org/wiki/Node.js)
+
+Node.jsのフレームワーク「Express」とは【初心者向け】  
+[https://techacademy.jp/magazine/16119](https://techacademy.jp/magazine/16119)
