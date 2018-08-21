@@ -267,8 +267,12 @@ $ npm install body-parser
 ---
 ## 実行ファイル
 
-ファイル(sample.js)を作成し、以下の内容をコピー  
+### sample.js, Procfile
+
+ファイルを作成し、以下の内容をコピー  
 [sample.js](sample.js)
+
+[Procfile](Procfile)
 
 ---
 ## テスト
@@ -321,7 +325,13 @@ $ git init
 $ heroku git:remote -a webapp名
 ```
 
-リポジトリにコミット
+ .gitignore ファイルを作成し、以下の内容をコピー  
+
+```console
+node_modules/
+```
+
+コミット
 
 ```console
 $ git add .
