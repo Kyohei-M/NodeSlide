@@ -187,7 +187,6 @@ layout: true
 ## Express.js
 
 ---
-layout: false
 ### Node.jsのWebアプリケーションフレームワーク
 
 * URI解析など、ローレベルな部分を実装しなくて済む
@@ -199,6 +198,7 @@ $ npm install express
 ```
 
 ---
+layout: false
 class: center, middle, inverse
 # デモ
 
